@@ -6,7 +6,7 @@ GIT
       actionpack (>= 3.2)
 
 GIT
-  remote: git@github.com:mahkhaled/translation_center.git
+  remote: git://github.com/mahkhaled/translation_center.git
   revision: 09627f7f73df745c3baa59a414fb88c8431198cc
   specs:
     translation_center (0.0.1)
