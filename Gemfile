@@ -20,6 +20,7 @@ gem "rails_autolink"
 gem "cache_digests", :git => 'git://github.com/lrbalt/cache_digests.git'
 gem "rack-mini-profiler"
 gem 'pg'
+gem 'thin'
 
 # Gems used only for assets and not required
 # in production environments by default.
