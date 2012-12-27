@@ -134,5 +134,7 @@ Tracksapp::Application.routes.draw do
   
   resources :notes
   resources :preferences
+
+  mount TranslationCenter::Engine => "/translation_center"
       
 end

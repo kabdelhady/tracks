@@ -209,7 +209,7 @@ module LoginSystem
       render :text => t('login.unsuccessful'), :status => 401
   end
 
-private
+  private
 
   # Redirect the user to the login page.
   def redirect_to_login

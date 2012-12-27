@@ -90,6 +90,7 @@ de:
     back: Zurück
     bugs: Bugs
     cancel: Abbrechen
+    collapse_expand: Collapse/expand
     context: Kontext
     contexts: Kontexte
     contribute: Mitwirken
@@ -109,6 +110,7 @@ de:
     go_back: Zurück
     last: Letzte
     logout: Abmelden
+    mailing_list: "Mailing List"
     month: Monat
     months: Monate
     next: Nächste
@@ -278,7 +280,65 @@ de:
       month: Monat
       second: Sekunden
       year: Jahr
+  devise: 
+    confirmations: 
+      confirmed: "Your account was successfully confirmed. You are now signed in."
+      send_instructions: "You will receive an email with instructions about how to confirm your account in a few minutes."
+      send_paranoid_instructions: "If your email address exists in our database, you will receive an email with instructions about how to confirm your account in a few minutes."
+    failure: 
+      already_authenticated: "You are already signed in."
+      inactive: "Your account was not activated yet."
+      invalid: "Invalid email or password."
+      invalid_token: "Invalid authentication token."
+      locked: "Your account is locked."
+      timeout: "Your session expired, please sign in again to continue."
+      unauthenticated: "You need to sign in or sign up before continuing."
+      unconfirmed: "You have to confirm your account before continuing."
+    mailer: 
+      confirmation_instructions: 
+        subject: "Confirmation instructions"
+      reset_password_instructions: 
+        subject: "Reset password instructions"
+      unlock_instructions: 
+        subject: "Unlock Instructions"
+    passwords: 
+      no_token: "You can't access this page without coming from a password reset email. If you do come from a password reset email, please make sure you used the full URL provided."
+      send_instructions: "You will receive an email with instructions about how to reset your password in a few minutes."
+      send_paranoid_instructions: "If your email address exists in our database, you will receive a password recovery link at your email address in a few minutes."
+      updated: "Your password was changed successfully. You are now signed in."
+      updated_not_active: "Your password was changed successfully."
+    registrations: 
+      destroyed: "Bye! Your account was successfully cancelled. We hope to see you again soon."
+      signed_up: "Welcome! You have signed up successfully."
+      signed_up_but_inactive: "You have signed up successfully. However, we could not sign you in because your account is not yet activated."
+      signed_up_but_locked: "You have signed up successfully. However, we could not sign you in because your account is locked."
+      signed_up_but_unconfirmed: "A message with a confirmation link has been sent to your email address. Please open the link to activate your account."
+      update_needs_confirmation: "You updated your account successfully, but we need to verify your new email address. Please check your email and click on the confirm link to finalize confirming your new email address."
+      updated: "You updated your account successfully."
+    sessions: 
+      signed_in: "Signed in successfully."
+      signed_out: "Signed out successfully."
+    unlocks: 
+      send_instructions: "You will receive an email with instructions about how to unlock your account in a few minutes."
+      send_paranoid_instructions: "If your account exists, you will receive an email with instructions about how to unlock it in a few minutes."
+      unlocked: "Your account has been unlocked successfully. Please sign in to continue."
   errors: 
+    messages: 
+      accepted: "must be accepted"
+      already_confirmed: "was already confirmed, please try signing in"
+      blank: "can't be blank"
+      confirmation: "doesn't match confirmation"
+      empty: "can't be empty"
+      even: "must be even"
+      exclusion: "is reserved"
+      expired: "has expired, please request a new one"
+      inclusion: "is not included in the list"
+      invalid: "is invalid"
+      not_a_number: "is not a number"
+      not_an_integer: "must be an integer"
+      not_found: "not found"
+      not_locked: "was not locked"
+      odd: "must be odd"
     user_unauthorized: "401 Unauthorized: Nur administrative Benutzer dürfen auf diese Funktion zugreifen."
   feedlist: 
     actions_completed_last_week: "In den letzten 7 Tagen erledigte Aufgaben"
@@ -306,6 +366,9 @@ de:
     select_feed_for_project: "Feed für dieses Projekt auswählen"
   footer: 
     send_feedback: "Senden Sie Feedback zu %{version}"
+  helpers: 
+    select: 
+      prompt: "Please select"
   integrations: 
     applescript_next_action_prompt: "Beschreibung der nächsten Aufgabe:"
     applescript_success_after_id: erstellt
@@ -316,6 +379,7 @@ de:
     mobile_navigation: 
       contexts: Kontexte
       feeds: Feeds
+      full: "Full Site"
       home: Home
       logout: Abmelden
       new_action: "Neue Aufgabe"
@@ -340,6 +404,7 @@ de:
       integrations_: "Tracks integrieren"
       manage_users: "Benutzer verwalten"
       manage_users_title: "Benutzer hinzufügen oder entfernen"
+      mobile: "Mobile Site"
       notes_title: "Alle Notizen anzeigen"
       organize: Organisieren
       preferences: Einstellungen
@@ -386,6 +451,8 @@ de:
     successful_with_session_info: "Anmeldung erfolgreich:"
     unsuccessful: "Anmeldung war nicht erfolgreich."
     user_no_expiry: "Angemeldet bleiben"
+  meta_search: 
+    or: or
   models: 
     preference: 
       due_in: "Fällig in %{days} Tagen"
@@ -419,15 +486,32 @@ de:
       format: 
         delimiter: ","
         format: "%n%u"
+        precision: 2
         separator: "."
+        significant: false
+        strip_insignificant_zeros: false
         unit: €
     format: 
       delimiter: "."
       precision: 2
       separator: ","
+      significant: false
+      strip_insignificant_zeros: false
     human: 
+      decimal_units: 
+        format: "%n %u"
+        units: 
+          billion: Billion
+          million: Million
+          quadrillion: Quadrillion
+          thousand: Thousand
+          trillion: Trillion
+          unit: ""
       format: 
+        delimiter: ""
         precision: 1
+        significant: true
+        strip_insignificant_zeros: true
       storage_units: 
         format: "%n %u"
         units: 
@@ -438,6 +522,12 @@ de:
           kb: KB
           mb: MB
           tb: TB
+    percentage: 
+      format: 
+        delimiter: ""
+    precision: 
+      format: 
+        delimiter: ""
   preferences: 
     authentication_header: "Deine Authentifizierung"
     change_authentication_type: "Authentifzierungsart ändern"
@@ -733,6 +823,7 @@ de:
       other: "Es befinden sich %{count} erledigte Aufgaben im Archiv."
     completed_last_day: "In den letzten 24 Stunden erledigt"
     completed_last_x_days: "In den letzten %{count} Tagen erledigt"
+    completed_more_than_x_days_ago: ""
     completed_recurrence_completed: "Es gibt keine weitere Aufgabe nach der soeben gelöschten. Die Wiederholung ist abgeschlossen."
     completed_recurring: "Erledigte wiederkehrende Aufgaben"
     completed_rest_of_month: "Erledigt diesen Monat"
@@ -754,6 +845,7 @@ de:
     delete: Löschen
     delete_action: "Aufgabe löschen"
     delete_recurring_action_confirm: "Soll die wiederkehrende Aufgabe '%{description}' wirklich gelöscht werden?"
+    delete_recurring_action_title: "Delete the recurring action"
     deleted_success: "Die Aufgabe wurde erfolgreich gelöscht."
     depends_on: "Hängt ab von"
     depends_on_separate_with_commas: "Hängt ab von (kommagetrennt)"
@@ -785,6 +877,7 @@ de:
     in_pending_state: "und als ausstehend markiert"
     list_incomplete_next_actions: "Unerledigte Folge-Aufgaben anzeigen"
     list_incomplete_next_actions_with_limit: "Zeige die letzten %{count} unerledigten Folge-Aufgaben"
+    mark_complete: "Mark complete"
     mobile_todos_page_title: "Alle Aufgaben"
     new_related_todo_created: "Eine neue Aufgabe wurde hinzugefügt, die zu dieser wiederkehrenden Aufgabe gehört"
     new_related_todo_created_short: "hat eine neue Aufgabe"
@@ -822,6 +915,7 @@ de:
     no_project: "--Kein Projekt--"
     no_recurring_todos: "Im Augenblick gibt es keine wiederkehrenden Aufgaben"
     older_completed_items: "ältere erledigte Aufgaben"
+    older_than_days: ""
     overdue: überfällig
     pending: Ausstehend
     recurrence: 
@@ -943,6 +1037,7 @@ de:
     destroy_user: "Benutzer löschen"
     failed_to_delete_user: "Löschen des Benutzers %{username} fehlgeschlagen"
     first_user_heading: "Willkommen bei TRACKS. Als erstes legen Sie bitte einen Administrator-Zugang an:"
+    first_user_title: "TRACKS::Sign up as the admin user"
     identity_url: Identity-URL
     label_auth_type: Authentifizierungsart
     manage_users: "Benutzer verwalten"

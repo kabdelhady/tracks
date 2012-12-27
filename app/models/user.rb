@@ -6,9 +6,10 @@ class User < ActiveRecord::Base
   attr_accessor :password
   attr_protected :is_admin # don't allow mass-assignment for this
   
-  attr_accessible :login, :first_name, :last_name, :password_confirmation, :password, :auth_type, :open_id_url
+  attr_accessible :email, :login, :first_name, :last_name, :password_confirmation, :password, :auth_type, :open_id_url
   #for will_paginate plugin
   cattr_accessor :per_page
+  acts_as_translator
   @@per_page = 5
 
   has_many :contexts,

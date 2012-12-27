@@ -7,6 +7,7 @@ gem 'rails'
 # always possible on all hosters
 gem "sqlite3"
 gem "mysql2"
+gem 'translation_center', :git => 'git@github.com:mahkhaled/translation_center.git'
 
 gem "RedCloth"
 gem "formatize"
@@ -19,6 +20,7 @@ gem "swf_fu"
 gem "rails_autolink"
 gem "cache_digests", :git => 'git://github.com/lrbalt/cache_digests.git'
 gem "rack-mini-profiler"
+gem 'pg'
 
 # Gems used only for assets and not required
 # in production environments by default.
