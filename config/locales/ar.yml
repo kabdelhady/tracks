@@ -1,0 +1,10 @@
+--- 
+ar: 
+  common: 
+    show_all: "أظهر الكل"
+  layouts: 
+    mobile_navigation: 
+      home: "الصفحة الرئيسية"
+    navigation: 
+      home: "الصفحة الرئيسية"
+      home_title: "الصفحة الرئيسية"
