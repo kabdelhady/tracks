@@ -25,7 +25,7 @@ class CreateTracksDb < ActiveRecord::Migration
     end
 
     create_table :users do |t|
-      t.column :login,           :string,      :limit => 80, :null => false
+      t.column :login,           :string,      :limit => 80
       t.column :password,        :string,      :limit => 40, :null => false
       t.column :word,            :string
       t.column :is_admin,        :boolean,     :default => false, :null => false
