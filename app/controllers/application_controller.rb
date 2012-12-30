@@ -33,7 +33,10 @@ class ApplicationController < ActionController::Base
   def restore_db
     last_restore = RestoreDate.first.last_restore
     period = RestoreDate.first.period
+    Rails.logger.debug ((Time.now - last_restore) / 1.hour).round
+    Rails.logger.debug 'check restart' * 100
     if Rails.env.production? && ((Time.now - last_restore) / 1.hour).round > period 
+      Rails.logger.debug 'will restart' * 100
       RestoreDate.first.update_attribute(:last_restore, DateTime.now)
       `heroku pgbackups:restore HEROKU_POSTGRESQL_CYAN`
       `heroku restart`
