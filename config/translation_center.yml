@@ -14,7 +14,7 @@ development:
   accept_admin_translations: true # when admins add/edit translations they are considered accepted directly
   save_default_translation: true # when a new key is added to db, the value of the key is added as the default translation in English
 production:
-  enabled: false
+  enabled: true
   # what language to support and their display names
   lang:
     en: 'English'
