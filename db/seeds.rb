@@ -5,3 +5,6 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+if RestoreDate.all.empty?
+  RestoreDate.create(last_restore: DateTime.now, period: 1)
+end

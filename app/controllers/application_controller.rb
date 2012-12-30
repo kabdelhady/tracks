@@ -23,17 +23,21 @@ class ApplicationController < ActionController::Base
   prepend_before_filter :login_required
   prepend_before_filter :enable_mobile_content_negotiation
   after_filter :set_charset
-  # before_filter :restore_db
+  before_filter :restore_db
 
   # By default, sets the charset to UTF-8 if it isn't already set
   def set_charset
     headers["Content-Type"] ||= "text/html; charset=UTF-8"
   end
 
-  # def restore_db
-  #   last_restore = RestoreDate.first.last_restore
-  #   if last_restore - 
-  # end
+  def restore_db
+    last_restore = RestoreDate.first.last_restore
+    period = RestoreDate.first.period
+    if Rails.env.production? && ((DateTime.now - last_restore) / 1.hour).round > period 
+      `heroku pgbackups:restore HEROKU_POSTGRESQL_CYAN`
+      `heroku restart`
+    end
+  end
 
   def set_locale
     locale = params[:locale] # specifying a locale in the request takes precedence

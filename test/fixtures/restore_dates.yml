@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  last_restore: 2012-12-30 13:06:18
+  period: 1
+
+two:
+  last_restore: 2012-12-30 13:06:18
+  period: 1
