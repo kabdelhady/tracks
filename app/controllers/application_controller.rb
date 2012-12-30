@@ -23,10 +23,15 @@ class ApplicationController < ActionController::Base
   prepend_before_filter :login_required
   prepend_before_filter :enable_mobile_content_negotiation
   after_filter :set_charset
+  before_filter :restore_db
 
   # By default, sets the charset to UTF-8 if it isn't already set
   def set_charset
     headers["Content-Type"] ||= "text/html; charset=UTF-8"
+  end
+
+  def restore_db
+    RestoreDate.first.last_restore
   end
 
   def set_locale
