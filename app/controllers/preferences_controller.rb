@@ -7,6 +7,11 @@ class PreferencesController < ApplicationController
   end
 
   def update
+    # only admin can change password
+    unless current_user.is_admin?
+      params['user'].delete(:password)
+      params['user'].delete(:password_confirmation)
+    end
     @prefs = current_user.prefs
     @user = current_user
     user_updated = current_user.update_attributes(params['user'])
