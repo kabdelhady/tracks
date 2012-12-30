@@ -32,7 +32,7 @@ class LoginController < ApplicationController
         notify :warning, t('login.unsuccessful')
       end
     when 'GET'
-      flash[:notice] = 'use login: "admin" and password: "123456"'
+      flash[:notice] = 'use login: "user" and password: "123456"'
       if User.no_users_yet?
         redirect_to signup_path
         return
