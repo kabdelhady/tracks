@@ -21,6 +21,8 @@ gem "cache_digests", :git => 'git://github.com/lrbalt/cache_digests.git'
 gem "rack-mini-profiler"
 gem 'pg'
 gem 'thin'
+gem 'heroku'
+gem 'heroku-api'
 
 # Gems used only for assets and not required
 # in production environments by default.
