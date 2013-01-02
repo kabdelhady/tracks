@@ -7,7 +7,7 @@ GIT
 
 GIT
   remote: git://github.com/mahkhaled/translation_center.git
-  revision: 408bfb446f14f2431ec5804117cc477a35432a9b
+  revision: c3ffb27087357e039c648724407ecf5919541296
   specs:
     translation_center (0.0.1)
       acts_as_votable
