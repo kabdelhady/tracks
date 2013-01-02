@@ -30,6 +30,7 @@ class ApplicationController < ActionController::Base
   end
 
   def set_locale
+    session[:lang_to] ||= :de # de is the default for translation center
     locale = params[:locale] # specifying a locale in the request takes precedence
     locale = locale || prefs.locale unless current_user.nil? # otherwise, the locale of the currently logged in user takes over
     locale = locale || request.env['HTTP_ACCEPT_LANGUAGE'].scan(/^[a-z]{2}/).first if request.env['HTTP_ACCEPT_LANGUAGE']
