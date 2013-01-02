@@ -6,6 +6,7 @@ module TranslationCenter
 
     def authenticate_user!
       return true if current_user != nil
+      session['return-to'] = '/translation_center'
       redirect_to '/login'
     end
 

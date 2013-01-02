@@ -18,7 +18,7 @@ gem "htmlentities"
 gem "swf_fu"
 gem "rails_autolink"
 gem "cache_digests", :git => 'git://github.com/lrbalt/cache_digests.git'
-gem "rack-mini-profiler"
+# gem "rack-mini-profiler"
 gem 'pg'
 gem 'thin'
 gem 'heroku'

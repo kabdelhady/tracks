@@ -9,7 +9,7 @@ namespace :heroku do
       puts 'Restoring db'
       `heroku pgbackups:restore HEROKU_POSTGRESQL_CYAN --confirm translation-center`
       puts 'Restarting server'
-      `heroku restart`
+      `heroku restart --app translation-center`
     end
   end
 

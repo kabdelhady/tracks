@@ -29,3 +29,4 @@
 //= require superfish
 //= require supersubs
 //= require swf_fu
+//= require translation_center/inspector

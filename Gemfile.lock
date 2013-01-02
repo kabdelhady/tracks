@@ -7,11 +7,12 @@ GIT
 
 GIT
   remote: git://github.com/mahkhaled/translation_center.git
-  revision: ab0754131a6cbaa858f68b4e3d0b6f12ebf318c4
+  revision: 408bfb446f14f2431ec5804117cc477a35432a9b
   specs:
     translation_center (0.0.1)
       acts_as_votable
       devise
+      font-awesome-rails
       haml
       haml-rails
       jquery-rails
@@ -112,6 +113,8 @@ GEM
       factory_girl (~> 4.1.0)
       railties (>= 3.0.0)
     ffi (1.2.0)
+    font-awesome-rails (0.4.1)
+      railties (~> 3.1)
     formatize (1.1.0)
       RedCloth (~> 4.2)
       actionpack (~> 3.0)
@@ -142,7 +145,7 @@ GEM
       thor (>= 0.14, < 2.0)
     js-routes (0.8.4)
       rails (>= 3.2)
-    json (1.7.5)
+    json (1.7.6)
     launchy (2.1.2)
       addressable (~> 2.3)
     libv8 (3.11.8.4)
@@ -174,8 +177,6 @@ GEM
     rack (1.4.1)
     rack-cache (1.2)
       rack (>= 0.4)
-    rack-mini-profiler (0.1.23)
-      rack (>= 1.1.3)
     rack-ssl (1.3.2)
       rack
     rack-test (0.6.2)
@@ -284,7 +285,6 @@ DEPENDENCIES
   mongrel (>= 1.2.0.pre2)
   mysql2
   pg
-  rack-mini-profiler
   rails
   rails_autolink
   sanitize
