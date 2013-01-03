@@ -250,8 +250,8 @@ en:
       default: "%Y-%m-%d"
       long: "%B %d, %Y"
       longer: "%A %B %d, %Y"
-      month_day: ""
-      only_day: ""
+      month_day: "Month Day"
+      only_day: "Only Day"
       short: "%b %d"
     month_names: 
       - ~
@@ -450,6 +450,8 @@ en:
       api_docs: "REST API Docs"
       calendar: Calendar
       calendar_title: "Calendar of due actions"
+      change_language: "Change Language"
+      change_locale: "Change Locale"
       completed_tasks: Done
       completed_tasks_title: Completed
       contexts_title: Contexts
@@ -479,6 +481,7 @@ en:
       stats_title: "See your statistics"
       tickler: Tickler
       tickler_title: Tickler
+      translation_center: "Translation Center"
       view: View
     next_actions_rss_feed: "RSS feed of next actions"
     toggle_contexts: "Toggle collapsed contexts"
@@ -488,8 +491,10 @@ en:
     translation_center: 
       application: 
         Translation_Center: "Translation Center"
+        back_to_app: "Back To App"
         from: From
         to: To
+        translate_to: "Translate To"
   login: 
     account_login: "Account login"
     cas_create_account: "If you like to request on please go here to %{signup_link}"
@@ -573,15 +578,11 @@ en:
         format: "%u%n"
         precision: 2
         separator: "."
-        significant: false
-        strip_insignificant_zeros: false
         unit: $
     format: 
       delimiter: ","
       precision: 3
       separator: "."
-      significant: false
-      strip_insignificant_zeros: false
     human: 
       decimal_units: 
         format: "%n %u"
@@ -591,9 +592,7 @@ en:
           quadrillion: Quadrillion
           thousand: Thousand
           trillion: Trillion
-          unit: ""
       format: 
-        delimiter: ""
         precision: 1
         significant: true
         strip_insignificant_zeros: true
@@ -607,12 +606,6 @@ en:
           kb: KB
           mb: MB
           tb: TB
-    percentage: 
-      format: 
-        delimiter: ""
-    precision: 
-      format: 
-        delimiter: ""
   preferences: 
     authentication_header: "Your authentication"
     change_authentication_type: "Change your authentication type"
@@ -861,7 +854,6 @@ en:
       month_day: "%B %d"
       short: "%d %b %H:%M"
       stats: "%a %d-%m"
-      time: ""
     pm: pm
   todos: 
     action_deferred: "The action '%{description}' was deferred"
@@ -909,7 +901,7 @@ en:
       other: "There are %{count} completed actions in the archive."
     completed_last_day: "Completed in the last 24 hours"
     completed_last_x_days: "Completed in the last %{count} days"
-    completed_more_than_x_days_ago: ""
+    completed_more_than_x_days_ago: "Completed More Than X Days Ago"
     completed_recurrence_completed: "There is no next action after the recurring action you just deleted. The recurrence is completed"
     completed_recurring: "Completed recurring todos"
     completed_rest_of_month: "Completed in the rest of this month"
@@ -922,7 +914,9 @@ en:
     context_changed: "Context changed to %{name}"
     convert_to_project: "Make project"
     defer_date_after_due_date: "Defer date is after due date. Please edit and adjust due date before deferring."
-    defer_x_days: "Defer X Days"
+    defer_x_days: 
+      one: "Defer 1 Day"
+      other: "Defer %{count} Days"
     deferred_actions_with: "Deferred actions with the tag '%{tag_name}'"
     deferred_pending_actions: "Deferred/pending actions"
     deferred_tasks_title: "TRACKS::Tickler"
@@ -998,8 +992,8 @@ en:
     no_last_completed_actions: "No completed actions found"
     no_project: "--No project--"
     no_recurring_todos: "Currently there are no recurring todos"
-    older_completed_items: ""
-    older_than_days: ""
+    older_completed_items: "Older Completed Items"
+    older_than_days: "Older Than Days"
     overdue: Overdue
     pending: Pending
     recurrence: 
@@ -1103,6 +1097,7 @@ en:
     unresolved_dependency: "The value you entered in the dependency field did not resolve to an existing action. This value will not be saved with the rest of the action. Continue?"
     was_due_on_date: "was due on %{date}"
   translation_center: 
+    back_to_app: "Back To App"
     categories: 
       category: 
         complete: Complete
@@ -1114,6 +1109,8 @@ en:
         pending: Pending
         translated: Translated
         untranslated: Untranslated
+    translate_to: "Translate To"
+    translation_center: "Translation Center"
     translation_keys: 
       show: 
         Add/Edit_Translation: "Add/Edit Translation"
@@ -1121,6 +1118,8 @@ en:
       show_keys: 
         translated: Translated
         untranslated: Untranslated
+      translation_keys: 
+        no_translation_keys: "No Translation Keys"
     translations: 
       accept_translation: 
         unaccept: Unaccept

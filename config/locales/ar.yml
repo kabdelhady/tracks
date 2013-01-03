@@ -1,10 +1,17 @@
 --- 
 ar: 
   common: 
-    show_all: "أظهر الكل"
+    projects: مشاريع
+    show_all: "اظهر الكل"
+    website: الموقع
   layouts: 
     mobile_navigation: 
       home: "الصفحة الرئيسية"
     navigation: 
+      admin: تحكم
+      change_language: "تغيير اللغة"
       home: "الصفحة الرئيسية"
       home_title: "الصفحة الرئيسية"
+      organize: رتب
+      starred: المفضلة
+      view: اعرض

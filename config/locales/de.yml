@@ -488,15 +488,11 @@ de:
         format: "%n%u"
         precision: 2
         separator: "."
-        significant: false
-        strip_insignificant_zeros: false
         unit: €
     format: 
       delimiter: "."
       precision: 2
       separator: ","
-      significant: false
-      strip_insignificant_zeros: false
     human: 
       decimal_units: 
         format: "%n %u"
@@ -506,9 +502,7 @@ de:
           quadrillion: Quadrillion
           thousand: Thousand
           trillion: Trillion
-          unit: ""
       format: 
-        delimiter: ""
         precision: 1
         significant: true
         strip_insignificant_zeros: true
@@ -522,12 +516,6 @@ de:
           kb: KB
           mb: MB
           tb: TB
-    percentage: 
-      format: 
-        delimiter: ""
-    precision: 
-      format: 
-        delimiter: ""
   preferences: 
     authentication_header: "Deine Authentifizierung"
     change_authentication_type: "Authentifzierungsart ändern"
@@ -823,7 +811,6 @@ de:
       other: "Es befinden sich %{count} erledigte Aufgaben im Archiv."
     completed_last_day: "In den letzten 24 Stunden erledigt"
     completed_last_x_days: "In den letzten %{count} Tagen erledigt"
-    completed_more_than_x_days_ago: ""
     completed_recurrence_completed: "Es gibt keine weitere Aufgabe nach der soeben gelöschten. Die Wiederholung ist abgeschlossen."
     completed_recurring: "Erledigte wiederkehrende Aufgaben"
     completed_rest_of_month: "Erledigt diesen Monat"
@@ -915,7 +902,6 @@ de:
     no_project: "--Kein Projekt--"
     no_recurring_todos: "Im Augenblick gibt es keine wiederkehrenden Aufgaben"
     older_completed_items: "ältere erledigte Aufgaben"
-    older_than_days: ""
     overdue: überfällig
     pending: Ausstehend
     recurrence: 
