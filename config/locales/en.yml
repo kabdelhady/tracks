@@ -450,8 +450,6 @@ en:
       api_docs: "REST API Docs"
       calendar: Calendar
       calendar_title: "Calendar of due actions"
-      change_language: "Change Language"
-      change_locale: "Change Locale"
       completed_tasks: Done
       completed_tasks_title: Completed
       contexts_title: Contexts
@@ -481,7 +479,6 @@ en:
       stats_title: "See your statistics"
       tickler: Tickler
       tickler_title: Tickler
-      translation_center: "Translation Center"
       view: View
     next_actions_rss_feed: "RSS feed of next actions"
     toggle_contexts: "Toggle collapsed contexts"
