@@ -7,7 +7,7 @@ gem 'rails'
 # always possible on all hosters
 
 gem "mysql2"
-gem 'translation_center', :git => 'git://github.com/mahkhaled/translation_center.git'
+gem 'translation_center', :git => 'git://github.com/BadrIT/translation_center.git'
 gem "RedCloth"
 gem "formatize"
 gem "sanitize"
