@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/BadrIT/translation_center.git
-  revision: 2f4111fa3cdd913e6bf59528ba85e3932f6b8e5a
+  revision: 6b39ac1fa740f3f1a1f29cf5bbd58dae2f27259f
   specs:
     translation_center (0.0.1)
       acts_as_votable
