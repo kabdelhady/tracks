@@ -450,6 +450,8 @@ en:
       api_docs: "REST API Docs"
       calendar: Calendar
       calendar_title: "Calendar of due actions"
+      change_language: "Change Language"
+      change_locale: "Change Locale"
       completed_tasks: Done
       completed_tasks_title: Completed
       contexts_title: Contexts
@@ -479,6 +481,7 @@ en:
       stats_title: "See your statistics"
       tickler: Tickler
       tickler_title: Tickler
+      translation_center: "Translation Center"
       view: View
     next_actions_rss_feed: "RSS feed of next actions"
     toggle_contexts: "Toggle collapsed contexts"
@@ -911,9 +914,9 @@ en:
     context_changed: "Context changed to %{name}"
     convert_to_project: "Make project"
     defer_date_after_due_date: "Defer date is after due date. Please edit and adjust due date before deferring."
-    defer_x_days: 
-      one: "Defer 1 Day"
-      other: "Defer %{count} Days"
+    defer_x_days:
+    one: "Defer X Day"
+    other: "Defer %{count} Days"
     deferred_actions_with: "Deferred actions with the tag '%{tag_name}'"
     deferred_pending_actions: "Deferred/pending actions"
     deferred_tasks_title: "TRACKS::Tickler"
@@ -1106,12 +1109,34 @@ en:
         pending: Pending
         translated: Translated
         untranslated: Untranslated
+    center: 
+      activity: 
+        ago: Ago
+        changes: Changes
+        key: Key
+        locale: Locale
+        no_matches: "No Matches"
+        time: Time
+        user: User
+      dashboard: 
+        activity: Activity
+        dashboard: Dashboard
+        language: Language
+        pending: Pending
+        progress: Progress
+        reset: Reset
+        search: Search
+        select_locale: "Select Locale"
+        translated: Translated
+        untranslated: Untranslated
+    dashboard: Dashboard
     translate_to: "Translate To"
     translation_center: "Translation Center"
     translation_keys: 
       show: 
         Add/Edit_Translation: "Add/Edit Translation"
         Translations: Translations
+        back_to_category: "Back To Category"
       show_keys: 
         translated: Translated
         untranslated: Untranslated
