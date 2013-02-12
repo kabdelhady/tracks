@@ -7,6 +7,7 @@
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tag %>
     <script type="text/javascript">
+      translation_center_path = "<%= translation_center_path %>"
       var SOURCE_VIEW = '<%=@source_view%>';
       var AUTH_TOKEN = '<%= raw(protect_against_forgery? ? form_authenticity_token.inspect : "") %>'
       var TAG_NAME = '<%= @tag_name ? @tag_name : "" %>'
